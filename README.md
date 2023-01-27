@@ -7,5 +7,4 @@ Try to solve the questions first without looking at the solution. Use;
 * [Google](https://www.google.com) 
 * [Freecodecamp](https://www.freecodecamp.org)
 * [Mozilla Developer Network](https://developer.mozilla.org) 
-
 for studying and research purposes.
