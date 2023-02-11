@@ -10,4 +10,4 @@ Then, within the document write 3 code examples (1 for var, 1 for const and 1 fo
 
 Extra Credit:
 
-To earn extra credit, add an explanation of "hoisting" to the top of your document. What is hoisting? What does the word mean, and how does hoisting work in Javascript?
+To earn extra credit, add an explanation of "hoisting" to the top of your document. What is hoisting? What does the word mean, and how does hoisting work in Javascript? 
