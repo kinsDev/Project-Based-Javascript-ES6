@@ -239,4 +239,122 @@ function Dog(year, breed){
 const skittles = new Dog(5, "German Shepherd");
 console.log(skittles);
 
+//Re-practicing
+function sayHi(){
+    console.log("Hello there");
+}
+sayHi();
+
+const myName = "Kinsley Kaimenyi";
+function yourName(){
+    console.log("What is your name? " + myName);
+}
+yourName();
+
+function user(arg){
+    console.log("This is user " + arg);
+}
+user("Kinsley");
+
+function userDetails(firstName, lastName, age){
+    console.log("I am " + firstName + " " + lastName + " of " + age + " years old." );
+}
+userDetails("Kinsley", "Kaimenyi", 21);
+
+function numberDoubler(num){
+    console.log(num * 2);
+}
+numberDoubler(10);
+
+function addInt(num1, num2){
+    console.log(num1 + num2);
+}
+addInt(23, 23);
+
+function numberMultiplier(num){
+    return num * 3;
+}
+console.log(numberMultiplier(50));
+
+const doubleNumerSeven = theFigure(7);
+const doubleNumberEight = theFigure(8);
+
+function theFigure(num){
+    const multipliedResult = num * 2;
+    return multipliedResult;
+}
+function addFigures(num1, num2){
+    const addedFigures = num1 + num2;
+    return addedFigures;
+}
+console.log(addFigures(doubleNumberEight, doubleNumerSeven));
+
+const firstName = theName("Kinsley");
+const lastName = theName("Kaimenyi");
+
+function theName(name){
+    console.log("My name is " + name);
+}
+theName("Gitonga");
+
+let myNumber = 200;
+function adding(num){
+    return num + 100;
+}
+console.log(adding(myNumber));
+
+//lets square and multiply
+function squareAndMultiply(num1, num2){
+    function square(x){
+        return x * x;
+    }
+    return square(num1) * square(num2);
+}
+console.log(squareAndMultiply(5, 5));
+
+function nameFormatter(firstName, lastName, age){
+    function formatted(arg1, arg2){
+        return arg1 + " " + arg2;
+    }
+    const formattedNames = formatted(firstName, lastName)
+    return formattedNames;
+}
+console.log(nameFormatter("Kinsley ", "Kaimenyi"));
+
+// I only took the fruits that I was interested in, that is fruit 1 - 4
+function formatFruits(fruit1, fruit2, fruit3, fruit4){
+    function availableFruits(f1, f2, f3){
+        return f1 + " " + f2 + " " + f3 ;
+    }
+    const fruitsBuy = availableFruits(fruit1, fruit2, fruit3);
+    return fruitsBuy;
+}
+console.log(formatFruits("mango ", "orange ", "apple "));
+
+function listedCars(car1, car2){
+    function carsAvailable(arg1, arg2){
+        return arg1 + " " + arg2;
+    }
+    const letMeBuy = carsAvailable(car1, car2);
+    return letMeBuy;
+}
+console.log(listedCars("Bugatti ", "RangeRover"));
+
+const favoriteCountries = [
+    {name: "Kenya", city: "Nairobi"},
+    {name: "SouthAfrica", city: "Capetown"},
+    {name: "Germany", city: "Berlin"},
+    {name: "France", city: "Paris"},
+    {name: "Egypt", city: "Cairo"},
+    {name: "Ugande", city: "Kampala"}
+]
+const listOfCountries = favoriteCountries.map(function(countries){
+    return countries;
+});
+console.log(listOfCountries);
+
+const johnWickSequel = [
+    {name:"John Wick 1"}
+]
+
 //NOW LET'S GET TO THE FUN PART, CHECK THE README.md FILE TO DO THE ASSIGNMENT
