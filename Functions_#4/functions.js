@@ -354,7 +354,14 @@ const listOfCountries = favoriteCountries.map(function(countries){
 console.log(listOfCountries);
 
 const johnWickSequel = [
-    {name:"John Wick 1"}
+    {name:"John Wick 1"},
+    {name:"John Wick 2"},
+    {name:"John Wick 3"},
+    {name:"John Wick 4 - To be released soon btw"}
 ]
+const listOutTheJohnWickSequel = johnWickSequel.map(function(listy){
+    return listy.name;
+})
+console.log(listOutTheJohnWickSequel);
 
 //NOW LET'S GET TO THE FUN PART, CHECK THE README.md FILE TO DO THE ASSIGNMENT
