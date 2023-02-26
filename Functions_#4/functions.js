@@ -239,7 +239,7 @@ function Dog(year, breed){
 const skittles = new Dog(5, "German Shepherd");
 console.log(skittles);
 
-//Re-practicing
+/*Re-practicing
 function sayHi(){
     console.log("Hello there");
 }
@@ -364,4 +364,34 @@ const listOutTheJohnWickSequel = johnWickSequel.map(function(listy){
 })
 console.log(listOutTheJohnWickSequel);
 
+//filter numbers from an array
+const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+const filteredNumber = myArray.filter(function(num){
+    return num === 5;
+});
+console.log(filteredNumber);
+//checkout even numbers in an array
+const evenNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+const listOfEvenNumbers = evenNumbers.filter(function(num){
+    return num % 2 === 0;
+});
+console.log(listOfEvenNumbers);
+
+const oddNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+const odd = oddNumbers.filter(function(arg){
+    return arg % 2 === 1;
+});
+console.log(odd);
+//double all numbers in an array
+const integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+const resultNumbers = integers.map(function(arg){
+    return arg * 2;
+});
+console.log(resultNumbers);
+//set default values in an array
+function vary(x = 5, y = 5){
+    return x * y;
+}
+console.log(vary());
+*/
 //NOW LET'S GET TO THE FUN PART, CHECK THE README.md FILE TO DO THE ASSIGNMENT
