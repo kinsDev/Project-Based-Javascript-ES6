@@ -394,4 +394,20 @@ function vary(x = 5, y = 5){
 }
 console.log(vary());
 */
+
+
 //NOW LET'S GET TO THE FUN PART, CHECK THE README.md FILE TO DO THE ASSIGNMENT
+/**Project Man Mortality Checker */
+function name(arg){
+    if(typeof arg === "string" || typeof arg === "number"){
+        return true;
+    }
+
+    const menMortal = ["adam", "abraham", "isaac", "jacob", 1234];
+    if(menMortal.icludes(arg)){
+        return true;
+    } else{
+        return false;
+    }
+}
+console.log(name("Kinsley"));
