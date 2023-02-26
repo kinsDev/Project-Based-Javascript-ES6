@@ -404,10 +404,28 @@ function name(arg){
     }
 
     const menMortal = ["adam", "abraham", "isaac", "jacob", 1234];
-    if(menMortal.icludes(arg)){
+    if(menMortal.includes(arg)){
         return true;
     } else{
         return false;
     }
 }
 console.log(name("Kinsley"));
+
+/**Let's re-do our project man mortality checker
+ * In this project we will do things a little different
+ * pay close atterntion to the integer and string
+ */
+function isManMortal(name){
+    if(typeof name != "string"){
+        return false;
+    }
+
+     const inputs = ["dudu", "krin", "jey"];
+     if(inputs.includes(name)){
+        return true;
+     }else{
+        return false;
+     };
+}
+console.log(isManMortal("Kaime"));
