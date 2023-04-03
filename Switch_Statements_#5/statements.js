@@ -90,3 +90,89 @@ carsAvailable("bmw");
 carsAvailable("dicovery");
 carsAvailable("toyota");
 carsAvailable("unkownn vehicle");
+
+//project number checker - notice that we have also decided to use "let" instead of console.log
+/*function numchecker(num){
+    let value;
+    switch(num) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+        value = "low range";
+        break;
+    case 4:
+    case 5:
+    case 6:
+        value = "mid range";
+        break;
+    case 7:
+    case 8:
+    case 9:
+        value = "high range";
+        break;
+    default:
+        value = "exceeds range";
+        break;
+    }
+    console.log("The value is "+ value);//we had to console.log the value on the same block
+}
+numchecker(10);
+numchecker(1);
+numchecker(5);
+numchecker(8);*/
+
+//we can add a function to a switch statement that pics out the values from the switch statement
+function numchecker(num){
+    let value;
+    switch(num) {
+    case 0:
+    case 1:
+    case 2:
+    case 3:
+        value = "low range";
+        break;
+    case 4:
+    case 5:
+    case 6:
+        value = "mid range";
+        break;
+    case 7:
+    case 8:
+    case 9:
+        value = "high range";
+        break;
+    default:
+        value = "exceeding range";
+        break;
+    }
+    setVolume(value);
+}
+function setVolume(n) {
+    console.log("The volume set is " + n);
+}
+
+numchecker(10);
+numchecker(1);
+numchecker(5);
+numchecker(8);
+
+//lets modify our switch statement to use functions
+const donutsFlavour = (flav) => {
+    switch(flav) {
+        case "s":
+            return "strawberry";
+        case "c":
+            return "chocolate";
+        case "v":
+            return "vanilla";
+        default:
+            return "not available";
+    }
+}
+const donuts = (selection) => {
+    const selectedDonuts = donutsFlavour(selection);
+    console.log("The selected flavour is " + selectedDonuts);
+}
+donuts("s");
+donuts("k");
