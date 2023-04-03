@@ -59,7 +59,7 @@ function numberAdder(num1, num2){
 console.log(numberAdder(numTwoDoubled, numeFiveDoubled));
 
 //let us do another calculation
-const doubleNumThree = theNumber(3);
+/*const doubleNumThree = theNumber(3);
 const doubleNumFive = theNumber(5);
 function theNumber(num){
     const theResult = num * 2;
@@ -68,7 +68,15 @@ function theNumber(num){
 function addTheResult(numa, numb){
     return numa + numb;
 }
-console.log(addTheResult(doubleNumThree, doubleNumFive));
+console.log(addTheResult(doubleNumThree, doubleNumFive));*/
+
+const doubleNumThree = theNumber(3);
+const doubleNumFive = theNumber(5);
+function theNumber(num){
+    const theResult = num * 2;
+    return theResult;
+}
+console.log(doubleNumThree, doubleNumFive);
 
 //something pretty cool
 /*const squaredNumber = function(num){
@@ -110,7 +118,7 @@ function nameFormatter(firstName, lastName, age){
 console.log(nameFormatter("Kinsley, Kaimenyi"));
 
 //fruits that I love
-function fruits(fruit1, fruit2, fruit3, fruit4){
+function fruits(fruit1, fruit2, fruit3, fruit4, fruit5){
     function listedFruits(f1, f2, f3, f4){
         return f1 + " " + f2 + " " + f3 + " " + f4;
     }
@@ -209,11 +217,12 @@ const evenNumbers = figures.map(function(digits){
 });
 console.log(evenNumbers);
 
-//let's filter out so that we can have even numbers in our filter
+//let's filter out so that we can have odd numbers in our filter
 const figure = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 const evenNumber = figure.filter(function(digits){
     return digits % 2 !== 0;
 });
+console.log(evenNumber);
 //continuation to double all numbers in the array
 const doubledNumbers = (digits) => {
     const numberContainer = [];
